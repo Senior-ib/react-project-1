@@ -33,7 +33,7 @@ export class MenuBar extends React.Component {
 export class LogginButton extends React.Component {
     render () {
         return(<div className="loggin-menu">
-            <button className="loggin-button"> {this.props.logg} </button>
+            <button type="button" className="loggin-button"> {this.props.logg} </button>
         </div>)
     }
 }

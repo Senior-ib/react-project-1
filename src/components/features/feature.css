@@ -1,0 +1,22 @@
+div.th-flex {
+    display: flex;
+}
+div .navbar-nav .nav-item a {
+    color: white !important;
+}
+.navbar-nav .nav-item {
+    margin-right: 70px;
+}
+.feat-cont .no-pr {
+    padding-left: 0;
+}
+.th-pt-4 {
+    padding-top: 40px;
+}
+.cl-blk a {
+    color: black;
+}
+.th-my-30 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
