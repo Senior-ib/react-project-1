@@ -31,3 +31,6 @@
     transform: rotate(360deg);
   }
 }
+.menu, .nav-brand, .loggin-menu {
+  display: inline-block;
+}
