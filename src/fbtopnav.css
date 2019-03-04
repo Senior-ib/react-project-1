@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.top-nav {
+    width: 100%;
+    background-color: #3b5998;
+    display: flex;
+}
+
+.top-nav>div {
+    flex: 50%;
+    max-width: 50%;
+}
+
+.top-nav-l {
+    margin-left: 10%;
+}
+
+.top-nav-r {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.topnav-item {
+    display: inline-block;
+}
+
+.login-page-bkg {
+    display: flex;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.login-page-bkg>* {
+    flex: 50%;
+}

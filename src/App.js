@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { NavBrand } from './element';
-import { MenuBar, LogginButton } from './element';
+import { FbNav, LoginPageBd } from './fbtopnav'
 
 class App extends Component {
   constructor(props) {
@@ -13,24 +11,9 @@ class App extends Component {
     return (
       <div className="">
         <div>
-          <NavBrand />
-          <MenuBar />
-          <LogginButton logg={this.state.logg} />
+          <FbNav />
+          <LoginPageBd />
         </div>
-        <header className="App-header App">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
       </div>
     );
   }
