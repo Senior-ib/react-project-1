@@ -10,15 +10,29 @@ const SocialHandles = (props) => {
         {name: "youtube", uri:"#"}
     ]
 
-    return (
-        <div className="soc-hand th-flex order-2 th-mt-4">
+    let SocialHandles;
+    if (props.isRow) {
+        SocialHandles = <div className="soc-hand th-flex order-2 th-mt-4">
         {
             mySocialHandles.map((socialHandle, i) => {
-                return <SocialButton social={socialHandle} key={i} />
+                return <SocialButton social={{...socialHandle, bg_color: 'blue'}} key={i} />
             })
         }
     </div>
-    )
+    } else if (props.isColumn) {
+        SocialHandles = <div className="soc-hand">
+            {
+                mySocialHandles.map((socialHandle, i) => {
+                    return <SocialButton social={{...socialHandle, bg_color: 'grey'}} key={i} />
+                })
+            }
+        </div>
+    }
+    return <div>
+        {
+            SocialHandles
+        }
+    </div>
 }
 
 export default SocialHandles;

@@ -3,6 +3,7 @@ import ListContent from '../components/elements/ListContent';
 import SideCont from '../components/elements/SideCont';
 import SearchElement from '../components/elements/SearchElement';
 import AudioPlayer from '../components/elements/AudioPlayer';
+import ImageElement from '../components/elements/ImageElement';
 
 const DownloadPage = () => {
     const categories = ['Fatawa', 'aqeedah', 'tefseer', 'buluugu-l-marom', 'zaadul-ma\'ad', 'jeelsatu-l-baseeroh', 'fiqh', 'hadith', 'Al-sharhu-l-qawaneen'];
@@ -30,6 +31,9 @@ const DownloadPage = () => {
         <div className="th-mt-30">
             <AudioPlayer lecture={audioLists} />
         </div>
+    </div>
+    <div className="">
+        <ImageElement imgData={{image:'al-med-ads.png'}} />
     </div>
     </div>
 </div>

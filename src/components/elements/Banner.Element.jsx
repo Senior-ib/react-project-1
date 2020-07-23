@@ -6,8 +6,9 @@ import { withRouter } from 'react-router-dom'
 class Banner extends React.Component {    
     render() {
         const path = this.props.location.pathname;
-        return (
-            <div className="banner">
+        let banner;
+        if (path == '/' || path == '/about' || path == '/articles' || path == '/ask' || path == '/contact') {
+            banner = <div className="banner">
                 <img src="/assets/hero-logo.png" className="banner-img" width="450px" />
                 {path === '/' && <div className="bnr-search-div">
                     <SearchElement btnType="text" />
@@ -18,6 +19,16 @@ class Banner extends React.Component {
                         >JILSATUL-BASEERAH TO HOLD NEXT WEEK, 10AM @ MARINA PARK, LAGOS</marquee>
                     </div>            
                 </div>}
+            </div>
+        } else {
+            banner = ""
+        }
+            
+        return (
+            <div className="">
+                {
+                    banner
+                }
             </div>
         )
     }
