@@ -13,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarMenu from './components/Navbar';
 import Banner from './components/elements/Banner.Element';
 import SocialHandles from './components/features/SocialHandles';
+import Footer from './components/elements/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -24,13 +25,14 @@ class App extends Component {
         <Router>
           <SocialHandles />
           <Banner />
-          <NavbarMenu />
+          <NavbarMenu styles="navbar-top-menu" />
           <Switch>
             <Route exact path='/' component={HomePage} />
             <Route path='/about' component={AboutPage} />
             <Route path='/ask' component={AskPage} />
             <Route path='/download' component={DownloadPage} />
           </Switch>
+          <Footer />
         </Router>
       </div>      
   }
