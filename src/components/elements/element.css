@@ -72,11 +72,26 @@ input.search-elem-inpt {
 .th-comp-hgt {
     height: 250px;
 }
+.bnr-search-div {
+    width: 850px;
+    margin: 15px auto;
+}
+.gold-cl-fnt {
+    color: rgb(189, 137, 3)
+}
+.mobile-search {
+    display: none;
+}
 @media only screen and (max-width: 700px) {
     img.banner-img {
         width: 350px;
     }
-
+    .desk-search {
+        display: none;
+    }
+    .mobile-search {
+        display: block;
+    }
     div.banner {
         height: 350px;
     }
@@ -85,5 +100,8 @@ input.search-elem-inpt {
     }
     div.img-elem img {
         /* width: 500px; */
+    }
+    .bnr-search-div {
+        width: 100%;
     }
 }
