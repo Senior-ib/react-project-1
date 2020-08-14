@@ -1,8 +1,13 @@
 *, body, div {
     box-sizing: border-box;
 }
-.bg-socio-icons {
+.bg-socio-icons-blue {
     background-color: rgb(35, 151, 167);
+    border: none;
+}
+.bg-socio-icons-grey {
+    background-color: rgb(166, 172, 173);
+    border: none;
 }
 
 .navbar.top {

@@ -4,16 +4,14 @@ import HomePage from './pages/Home.page';
 import AboutPage from './pages/About.page';
 import AskPage from './pages/AskSheikh.page';
 import DownloadPage from './pages/Downloads.page';
-import ContactPage from './pages/Contact.page';
-import logo from './logo.svg';
 import './App.css';
-import { NavBrand } from './element';
-import { MenuBar, LogginButton } from './element';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarMenu from './components/Navbar';
 import Banner from './components/elements/Banner.Element';
 import SocialHandles from './components/features/SocialHandles';
 import Footer from './components/elements/Footer';
+import ArticlesPage from './pages/Articles.page';
+import ArticlePage from './pages/Article.page';
 
 class App extends Component {
   constructor(props) {
@@ -23,14 +21,16 @@ class App extends Component {
   render() {
     return <div className="">
         <Router>
-          <SocialHandles />
+          <SocialHandles isRow={true} />
           <Banner />
           <NavbarMenu styles="navbar-top-menu" />
           <Switch>
             <Route exact path='/' component={HomePage} />
             <Route path='/about' component={AboutPage} />
             <Route path='/ask' component={AskPage} />
+            <Route path="/articles" component={ArticlesPage} />
             <Route path='/download' component={DownloadPage} />
+            <Route path="/article/:id" component={ArticlePage} />
           </Switch>
           <Footer />
         </Router>

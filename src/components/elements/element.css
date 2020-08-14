@@ -92,6 +92,17 @@ input.search-elem-inpt {
 .mobile-search {
     display: none;
 }
+.rel-div {
+    position: relative;
+}
+.abs-top {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.img-elem {
+    margin-bottom: 40px;
+}
 @media only screen and (max-width: 700px) {
     img.banner-img {
         width: 350px;

@@ -1,0 +1,54 @@
+.headings {
+    text-align: center;
+    margin-top: 100px;
+}
+.headings > div {
+    margin-bottom: 40px;
+}
+.headings .title p {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+div.sides-30 {
+    width: 70%;
+    margin: 0 auto;
+}
+.headings .author {
+    margin-right: 20px;
+}
+.article .body {
+    font-size: 18px;
+    color: grey;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+    margin-bottom: 80px;
+}
+.article {    
+    margin-bottom: 80px;
+}
+.yellow {
+    background-color: yellow;
+}
+.center {    
+    text-align: center;
+}
+.bt-1 {
+    border-top: 1px solid rgb(226, 226, 226);
+}
+.med-pt {
+    padding-top: 50px;
+}
+.med-mb {
+    margin-bottom: 50px;
+}
+.social-left {
+    position: fixed;
+}
+@media only screen and (max-width: 675px) {
+    div.sides-30 {
+        width: 95%;
+    }
+    .social-left {
+        display: none;
+    }
+}
